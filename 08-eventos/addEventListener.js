@@ -1,7 +1,8 @@
-const albaca = document.getElementById("albaca");
+const toppings = document.getElementsByClassName("topping");
 
 function mostrarClic(e) {
   console.log(e.target.innerText);
 }
-
-albaca.addEventListener("click", mostrarClic);
+for (const topping of toppings) {
+  topping.addEventListener("click", mostrarClic);
+}
