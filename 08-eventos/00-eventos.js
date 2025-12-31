@@ -1,4 +1,4 @@
 console.log("Hola Mundo");
-function mostrarClic() {
-  console.log("Click!");
+function mostrarClic(topping) {
+  console.log(`Click sobre ${topping}`);
 }
