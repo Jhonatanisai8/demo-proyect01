@@ -1,8 +1,11 @@
 const toppings = document.getElementsByClassName("topping");
-
+/*
 function mostrarClic(e) {
   console.log(e.target.innerText);
 }
+*/
 for (const topping of toppings) {
-  topping.addEventListener("click", mostrarClic);
+  topping.addEventListener("click", (e) => {
+    console.log(`Click sobre ${e.target.innerText}`);
+  });
 }
